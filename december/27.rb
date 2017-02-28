@@ -1,7 +1,11 @@
 require 'rspec'
 
-def palindrome? word
+def palindrome? word 
+	word.downcase == word.downcase.reverse
 end
+
+p palindrome? "Tacocat"
+
 
 describe 'Check if a word is a palindrome' do
   it 'returns true if the word is a palindrome, false if not' do
