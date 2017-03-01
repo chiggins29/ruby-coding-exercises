@@ -5,6 +5,9 @@ require 'rspec'
 # $
 
 def currency_converter amount, location
+	currency_converter.new(5000, "USD") #=> "$1.00"
+	Money.new(100, "GBP") #=> "£1.00"
+	Money.new(100, "EUR") #=> "€1.00"
 end
 
 describe 'Currency converter' do
