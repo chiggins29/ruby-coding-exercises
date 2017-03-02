@@ -14,3 +14,6 @@ describe 'HTML Param Converter' do
   end
 end
 
+#.map will iterate over all the elements in the hash
+# |i| will iterate over the hash -- i * "=" -- will combine you hash :key :value with an =
+# * & will combine your two :key :value pairs. 

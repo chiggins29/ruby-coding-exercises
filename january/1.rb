@@ -1,6 +1,7 @@
 require 'rspec'
 
 def title_creator title
+	
 end
 
 describe 'HTML h1 converter' do
@@ -8,3 +9,5 @@ describe 'HTML h1 converter' do
     expect(title_creator 'A Heading').to eq('<h1>A Heading</h1>')
   end
 end
+
+title_creator('A Heading')
