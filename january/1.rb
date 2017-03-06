@@ -14,3 +14,5 @@ describe 'HTML h1 converter' do
 end
 
 title_creator('A Heading')
+
+#p (<h1>'#{title}</h1>')
