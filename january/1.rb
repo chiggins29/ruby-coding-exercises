@@ -1,9 +1,9 @@
 require 'rspec'
 
 def title_creator title
-	heading = %w{h1 #{title} h1}
-	heading[1] = title
-	'<%s>%s</%s>' % heading
+	heading = %w{h1 #{title} h1}  #this just creates a regular string
+	heading[1] = title 
+	'<%s>%s</%s>' % heading  #this is taking the 3 elements from my heading var and placing each element into the h1 tag syntax.
 end
 	
 
@@ -15,4 +15,4 @@ end
 
 title_creator('A Heading')
 
-#p (<h1>'#{title}</h1>')
+#p (<h1>'#{title}'</h1>)
