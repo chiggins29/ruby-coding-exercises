@@ -1,10 +1,11 @@
 require 'rspec'
 
 class String
+  #this code will only count the words not the symbols
  def total_words
     scan(/\w+/).count
  end
-
+    #scan is able to take a block in order to iterate over the words,, this code will create a hash and return how many times a word is in a sentence.
  def word_list
     list = Hash.new(0)
     downcase.scan(/\w+/) { |word| list[word] += 1 }
