@@ -7,6 +7,8 @@ menu = {
 }
 
 def daily_special hash
+	specials = []
+	hash.map { |todays| specials << todays.last }.flatten.sample
 end
 
 describe 'Nested hash element selector' do
@@ -15,3 +17,4 @@ describe 'Nested hash element selector' do
   end
 end
 
+p daily_special(menu)
